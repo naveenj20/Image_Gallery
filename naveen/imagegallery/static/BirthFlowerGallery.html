@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birth Month Flowers</title>
+  <link rel="stylesheet" href="BirthFlowerGallery.css">
+</head>
+<body>
+  <h1>Birth Month Flower Gallery 🌸</h1>
+
+  <div class="gallery" onclick="openLightbox(event)">
+    <div class="img-card"><img src="Images/january.jpg" alt="January - Carnation"><p>January – Carnation</p></div>
+    <div class="img-card"><img src="Images/february.jpg" alt="February - Violet"><p>February – Violet</p></div>
+    <div class="img-card"><img src="Images/march.jpg" alt="March - Daffodil"><p>March – Daffodil</p></div>
+    <div class="img-card"><img src="Images/april.jpg" alt="April - Daisy"><p>April – Daisy</p></div>
+    <div class="img-card"><img src="Images/may.jpg" alt="May - Lily of the Valley"><p>May – Lily of the Valley</p></div>
+    <div class="img-card"><img src="Images/june.jpg" alt="June - Rose"><p>June – Rose</p></div>
+    <div class="img-card"><img src="Images/july.jpg" alt="July - Larkspur"><p>July – Larkspur</p></div>
+    <div class="img-card"><img src="Images/august.jpg" alt="August - Gladiolus"><p>August – Gladiolus</p></div>
+    <div class="img-card"><img src="Images/september.jpg" alt="September - Aster"><p>September – Aster</p></div>
+    <div class="img-card"><img src="Images/october.jpg" alt="October - Marigold"><p>October – Marigold</p></div>
+    <div class="img-card"><img src="Images/november.jpg" alt="November - Chrysanthemum"><p>November – Chrysanthemum</p></div>
+    <div class="img-card"><img src="Images/december.jpg" alt="December - Narcissus"><p>December – Narcissus</p></div>
+  </div>
+
+  <div id="lightbox">
+    <span id="close-btn" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" src="" alt="Flower Image">
+    <p id="caption"></p>
+    <div id="thumbnail-container"></div>
+    <button id="prev-btn" onclick="changeImage(-1)">&lt; Prev</button>
+    <button id="next-btn" onclick="changeImage(1)">Next &gt;</button>
+  </div>
+
+  <script src="BirthFlowerGallery.js"></script>
+</body>
+</html>

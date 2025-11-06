@@ -1,0 +1,111 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f9e3e3, #fbe8f4);
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  color: #d63384;
+  margin: 30px 0;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.img-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.img-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.img-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.img-card p {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: #555;
+}
+
+#lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 10;
+  padding: 20px;
+}
+
+#lightbox-img {
+  width: 60%;
+  max-height: 70%;
+  border-radius: 12px;
+}
+
+#caption {
+  color: white;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+#close-btn {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+#thumbnail-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+#thumbnail-container img {
+  width: 70px;
+  height: 70px;
+  border-radius: 8px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+#thumbnail-container img.active {
+  border: 3px solid #ff80aa;
+  opacity: 1;
+}
+
+#prev-btn, #next-btn {
+  background: #ff80aa;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#prev-btn:hover, #next-btn:hover {
+  background: #e85d90;
+}
